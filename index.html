@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Beard - Профессиональный барбершоп</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div>
+            <img src="Black Beard.png" alt="Black Beard Logo">
+            <span class="brand-name">Black Beard</span>
+        </div>
+        <button class="apply-a-time" onclick="scrollToBooking()">Записаться</button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Профессиональные стрижки для настоящих мужчин</h1>
+                <p>Стиль, качество и традиции</p>
+                <button class="apply-a-time" onclick="scrollToBooking()">Записаться</button>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="классич.стрижка.png" alt="Классическая стрижка" class="service-card-image">
+                    <div class="service-card-content">
+                        <h3>Классическая стрижка</h3>
+                        <div class="price">2500₽</div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="опасн.бритьё.png" alt="Бритьё опасной бритвой" class="service-card-image">
+                    <div class="service-card-content">
+                        <h3>Бритьё опасной бритвой</h3>
+                        <div class="price">2000₽</div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="стрижка.бороды.png" alt="Стрижка бороды" class="service-card-image">
+                    <div class="service-card-content">
+                        <h3>Стрижка бороды</h3>
+                        <div class="price">1500₽</div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="Укладка1.png" alt="Укладка" class="service-card-image">
+                    <div class="service-card-content">
+                        <h3>Укладка</h3>
+                        <div class="price">1000₽</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Work Section -->
+        <section id="works" class="works-section">
+            <h2 class="section-title">Наши работы</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button>
+                <div class="carousel" id="carousel">
+                    <div class="carousel-item">
+                        <div class="carousel-placeholder"></div>
+                        <div class="carousel-placeholder"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-placeholder"></div>
+                        <div class="carousel-placeholder"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-placeholder"></div>
+                        <div class="carousel-placeholder"></div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="moveCarousel(1)">›</button>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="booking-section">
+            <h2 class="section-title">Запишитесь онлайн</h2>
+            <div class="booking-container">
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button class="calendar-nav" onclick="changeMonth(-1)">‹</button>
+                        <div class="calendar-month" id="calendarMonth">Июль 2024</div>
+                        <button class="calendar-nav" onclick="changeMonth(1)">›</button>
+                    </div>
+                    <div class="calendar-weekdays">
+                        <div class="calendar-weekday">Пн</div>
+                        <div class="calendar-weekday">Вт</div>
+                        <div class="calendar-weekday">Ср</div>
+                        <div class="calendar-weekday">Чт</div>
+                        <div class="calendar-weekday">Пт</div>
+                        <div class="calendar-weekday">Сб</div>
+                        <div class="calendar-weekday">Вс</div>
+                    </div>
+                    <div class="calendar-days" id="calendarDays"></div>
+                </div>
+                <div class="time-slots">
+                    <h3 class="time-slots-title">Доступное время - 9 Июля</h3>
+                    <div class="time-slots-grid">
+                        <button class="time-slot">10:00</button>
+                        <button class="time-slot">11:00</button>
+                        <button class="time-slot unavailable">12:00</button>
+                        <button class="time-slot">13:00</button>
+                        <button class="time-slot">14:00</button>
+                        <button class="time-slot">15:00</button>
+                        <button class="time-slot unavailable">16:00</button>
+                        <button class="time-slot">17:00</button>
+                        <button class="time-slot">18:00</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <h2 class="section-title">Что о нас говорят</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">АП</div>
+                        <div class="testimonial-name">Алексей П.</div>
+                    </div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">Лучший барбершоп в городе! Мастера - настоящие профессионалы. Всегда выхожу с идеальной стрижкой и отличным настроением.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">ДВ</div>
+                        <div class="testimonial-name">Дмитрий В.</div>
+                    </div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">Отличная атмосфера и сервис. Стрижка бороды на высшем уровне. Рекомендую всем, кто ценит качество и стиль.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contacts" class="contacts-section">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-label">Телефон</div>
+                    <div class="contact-value">+7 (495) 123-45-67</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📷</div>
+                    <div class="contact-label">Instagram</div>
+                    <div class="contact-value">@blackbeard.bshop</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-label">Адрес</div>
+                    <div class="contact-value">г. Москва, ул. Тверская, 1</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Black Beard. Все права защищены.</p>
+    </footer>
+
+    <!-- Booking Confirmation Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-icon">✓</div>
+            <h2>Запись подтверждена!</h2>
+            <p>Ваша запись успешно оформлена. Мы свяжемся с вами для подтверждения.</p>
+            <div class="booking-details">
+                <p><strong>Услуга:</strong> Не выбрана</p>
+                <p><strong>Дата:</strong> -</p>
+                <p><strong>Время:</strong> -</p>
+            </div>
+            <button class="apply-a-time" onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
