@@ -99,7 +99,7 @@ header img {
 }
 
 .apply-a-time:hover {
-    background-color: #80671e;
+    background-color: #cca817;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.349);
 }
@@ -803,6 +803,7 @@ html {
         padding: 20px;
     }
 }
+
 
 
 
