@@ -116,8 +116,7 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23282822" width="1200" height="800"/><text x="50%25" y="50%25" font-size="100" fill="%23333" text-anchor="middle" dominant-baseline="middle">Barber Image</text></svg>') center/cover;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23282822" width="1200" height="800"/><text x="50%25" y="50%25" font-size="100" fill="%23333" text-anchor="middle" dominant-baseline="middle">Barber Image</text></svg>') center/cover;
     text-align: center;
     padding: 0 20px;
 }
@@ -803,6 +802,7 @@ html {
         padding: 20px;
     }
 }
+
 
 
 
