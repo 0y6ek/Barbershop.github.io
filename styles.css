@@ -88,7 +88,7 @@ header img {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: rgba(138, 127, 28, 0.726);
+    background: rgba(201, 166, 22, 0.8);
     transform: translate(-50%, -50%);
     transition: width 0.6s, height 0.6s;
 }
@@ -101,7 +101,7 @@ header img {
 .apply-a-time:hover {
     background-color: #cca817;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.349);
+    box-shadow: 0 5px 15px #c9a616
 }
 
 .apply-a-time:active {
@@ -110,36 +110,40 @@ header img {
 }
 
 /* Hero Section */
-.hero {
+.wrapper {
     position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('barbeshop-wrapper.png');
     text-align: center;
     padding: 0 20px;
+    background-image: 
+    linear-gradient(to bottom, rgba(0,0,0,0.8), transparent, rgba(0,0,0,0.8)),
+    url('barbeshop-wrapper.png');
+    background-size: 120% auto;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
 }
 
-.hero-content {
+.wrapper-content {
     animation: fadeInUp 1s ease;
 }
 
-.hero h1 {
+.wrapper h1 {
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
-.hero p {
+.wrapper p {
     font-size: 24px;
     margin-bottom: 40px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
-.hero .apply-a-time {
+.wrapper .apply-a-time {
     font-size: 18px;
     padding: 15px 40px;
 }
@@ -589,7 +593,7 @@ section.visible {
 
 .contact-icon {
     font-size: 48px;
-    color: var(--gold);
+    color: #cca817;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
 }
